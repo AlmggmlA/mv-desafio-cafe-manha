@@ -6,6 +6,8 @@ import dao.UsuarioDAO;
 public class Usuario {
 	
 	private int id;
+	
+
 	private String cpf;
 	private String nome;
 	private String senha;
@@ -28,6 +30,9 @@ public class Usuario {
 	
 	public Usuario() {}
 	
+	public int getId() {return id;}
+	public void setId(int id) {this.id = id;}
+	
 	public String getCpf() {return cpf;}
 	public void setCpf(String cpf) {this.cpf = cpf;}
 	
@@ -47,6 +52,10 @@ public class Usuario {
 	
 	public void consultar() {
 		new UsuarioDAO().consultarUsuario(this);
+	}
+	
+	public Usuario buscarIdUsuario(int idusuario) {
+		return new UsuarioDAO().buscarIdUsuario(idusuario);
 	}
  
 }

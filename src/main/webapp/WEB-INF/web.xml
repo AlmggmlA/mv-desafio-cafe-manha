@@ -79,4 +79,14 @@
     <servlet-name>consultarItemController</servlet-name>
     <url-pattern>/consultarItemController</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>alterarUsuarioController</display-name>
+    <servlet-name>alterarUsuarioController</servlet-name>
+    <servlet-class>controller.alterarUsuarioController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>alterarUsuarioController</servlet-name>
+    <url-pattern>/alterarUsuarioController</url-pattern>
+  </servlet-mapping>
 </web-app>

@@ -1,3 +1,4 @@
+<%@page import jakarta.servlet.http.HttpSession%>
 <%@page import="model.Item_cafeManha"%>
 <%@ page import="java.util.List" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -24,8 +25,7 @@
 					<input type="submit" value="Adicionar" class="Botao_cafe">
 				</td>
 			</table>	
-			
-																										
+																													
 	</form>
 		
 	<%
@@ -61,7 +61,15 @@
 		}
 	%>
 	
+	<a href="/src/main/webapp/login.jsp">ALTERAR CADASTRO USUÁRIO</a><br/>
 	
+	<%
+		HttpSession sessao = request.getSession(true);
+		
+		String cpf = (String)session.getValue("usuario");
+		
+		System.out.println(cpf);
+	%>
 	
 </body>
 </html>

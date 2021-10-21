@@ -12,6 +12,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import model.Usuario;
 
 /**
@@ -59,7 +60,13 @@ public class loginController extends HttpServlet {
 		
 		try {
 			if(rsUsuario_dao.next()) {
-				response.sendRedirect("/src/main/webapp/telaUsuario.jsp");				
+				
+//				HttpSession session = request.getSession(true);
+//				session.putValue("usuario", cpf);
+				
+				//response.sendRedirect(request.getContextPath()+"/alterarUsuarioController");
+				response.sendRedirect("/src/main/webapp/telaUsuario.jsp");	
+				//response.sendRedirect("telaUsuario.jsp");				
 			}
 			else {				
 				RequestDispatcher dispatcher = request.getRequestDispatcher("/src/main/webapp/login.jsp");
