@@ -9,51 +9,14 @@ import java.util.Properties;
 
 import org.apache.tomcat.dbcp.dbcp2.DriverManagerConnectionFactory;
 
-import JDBC.ConnectionJDBC_Factory;
+
 
 public class MySqlConnection {
 	
 	public Connection getConnection() 
 	{
 		Connection conexao = null;
-		
-		/*try{	            
-		           		            
-					String driver = "mysql";
-				    String dataBaseAddress = "localhost:3306";
-				    String dataBaseName = "almg";
-				    String user = "root";
-				    String password = "123456";
-		
-		            
-		            StringBuilder construcaoStringConexao = new StringBuilder("jdbc:")
-		                    .append(driver).append("://")
-		                    .append(dataBaseAddress).append("/")
-		                    .append(dataBaseName);
-		
-		            String urlConexao = construcaoStringConexao.toString();
-		            System.out.println(urlConexao);
-		
-		            
-		            try{
-		                conn = DriverManager.getConnection(urlConexao,user,password);
-		                System.out.println("Conectado com SUCESSO!");
-		            }catch (SQLException e){
-		                System.out.println("FALHA ao tentar criar a conexão!");
-		                throw new RuntimeException(e);
-		            }
-		            catch (Exception e){
-		                System.out.println("Falha na conexão: "+e);
-		            }
-		           		
-		        }finally {
-	                //conn.close();
-	            }
-					/*catch (IOException e){
-		            System.out.println("FALHA ao tentar carregar arquivos de propriedades!");
-		            e.printStackTrace();
-		        }*/
-		        //return conn;
+			
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");

@@ -6,7 +6,7 @@
 </head>
 <body>
 	<center><strong>CAFÉ DA MANHÃ MV</strong></center>
-	<img  src="images/cafe_manha.jpg">
+	<img  src="/src/main/webapp/images/cafe_manha.jpg">
 	
 	<input type="hidden" name="x" value="1">
 	

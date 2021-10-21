@@ -11,7 +11,7 @@
 <body>
 <form name="frmCadastroCafe" action="cadastrarItemController" method="get">
 		<h3> Bem-vindo(a)!</h3> <br/>
-		<a href="login.jsp">deslogar</a><br/>
+		<a href="/src/main/webapp/login.jsp">deslogar</a><br/>
 		
 		Informe o que irá levar para o café da manhã!
 			<table>		

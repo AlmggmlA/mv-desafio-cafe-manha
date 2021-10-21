@@ -48,8 +48,7 @@ public class UsuarioDAO {
 	}
 	
 	public ResultSet consultarUsuario(Usuario usuario) {
-		
-		//String sql_consulta = "SELECT * FROM usuario WHERE cpf ="+ usuario.getCpf() + " AND senha ="+usuario.getSenha();
+				
 		String sql_consulta = "SELECT * FROM usuario WHERE cpf = ? AND senha = ?";
 		
 		ResultSet rs = null;
@@ -65,16 +64,7 @@ public class UsuarioDAO {
 			rs = prepStat.executeQuery();
 			
 			System.out.println(rs);
-			
-//			if(rs!=null && rs.next()) {
-//				System.out.println(rs.getString("cpf"));
-//				System.out.println(rs.getString("senha"));				
-//			}
-			
-			/*if(rs!=null && rs.getString("cpf")== usuario.getCpf() && rs.getString("senha")==usuario.getSenha()) {
-				System.out.println(rs.getString("cpf"));
-				System.out.println(rs.getString("senha"));
-			}*/
+	
 			
 		} catch(SQLException sqlEx) {
 			System.out.println(sqlEx);

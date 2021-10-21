@@ -40,7 +40,7 @@ public class cadastrarItemController extends jakarta.servlet.http.HttpServlet {
 		String mensagem;
 		Item_cafeManha itemCafeManha = new Item_cafeManha();
 		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("telaUsuario.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/src/main/webapp/telaUsuario.jsp");
 		
 		if(nomeItem != null && !nomeItem.isEmpty()){			
 			itemCafeManha.setNomeItem(nomeItem);

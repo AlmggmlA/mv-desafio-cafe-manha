@@ -51,7 +51,7 @@ public class consultarItemController extends HttpServlet {
 		}
 		
 		request.setAttribute("itens", itens);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("telaUsuario.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/src/main/webapp/telaUsuario.jsp");
 		dispatcher.forward(request, response);
 	}
 

@@ -59,39 +59,18 @@ public class loginController extends HttpServlet {
 		
 		try {
 			if(rsUsuario_dao.next()) {
-				response.sendRedirect("telaUsuario.jsp");				
+				response.sendRedirect("/src/main/webapp/telaUsuario.jsp");				
 			}
 			else {				
-				RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
+				RequestDispatcher dispatcher = request.getRequestDispatcher("/src/main/webapp/login.jsp");
 				dispatcher.forward(request, response);
 				mensagem = "Informe um CPF e/ou Senha válido!";				
 			}
 
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+		} catch (SQLException e) {			
 			e.printStackTrace();
-		}
-					
+		}					
 		
-		
-		
-		//RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
-		
-//		if(cpf != null && !cpf.isEmpty()){			
-//			
-//			usuario.setCpf(cpf);
-//			usuario.setSenha(senha);
-//			usuario.consultar();
-//			
-//			response.sendRedirect("telaUsuario.jsp");
-//			
-//		}
-//		else {
-//			mensagem = "Informe um CPF e/ou Senha válido!";
-//		}
-		/*request.setAttribute("mensagem",mensagem);			
-		dispatcher.forward(request, response);*/
-		//RequestDispatcher dispatcher = request.getRequestDispatcher("telaUsuario.jsp");
 	}
 
 }
