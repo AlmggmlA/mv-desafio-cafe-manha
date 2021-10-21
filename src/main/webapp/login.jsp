@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Tela de Login</title>
 </head>
 <body>
-	Voltar para <a href="index.html">HOME</a>
-	
+	Voltar para <a href="inicial.html">HOME</a>
+		
 	<form method="post" action="loginController"><br/>
 		<label>CPF:</label><br/>
 		<input type="text" name="cpf"/><br/>

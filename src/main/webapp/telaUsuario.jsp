@@ -6,11 +6,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Tela do Usuário</title>
 </head>
 <body>
 <form name="frmCadastroCafe" action="cadastrarItemController" method="get">
 		<h3> Bem-vindo(a)!</h3> <br/>
+		<a href="login.jsp">deslogar</a><br/>
 		
 		Informe o que irá levar para o café da manhã!
 			<table>		
