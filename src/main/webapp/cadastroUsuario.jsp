@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-Voltar para <a href="inicial.html">HOME</a>
+Voltar para <a href="index.html">HOME</a>
 
 
 <form name="frmCadastroUsuario" action="cadastrarUsuarioController" method="get">

@@ -7,7 +7,7 @@
 <title>Tela de Login</title>
 </head>
 <body>
-	Voltar para <a href="inicial.html">HOME</a>
+	Voltar para <a href="index.html">HOME</a>
 		
 	<form method="post" action="loginController"><br/>
 		<label>CPF:</label><br/>
