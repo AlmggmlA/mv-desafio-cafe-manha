@@ -1,11 +1,13 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Home</title>
 </head>
 <body>
 	<center><strong>CAFÉ DA MANHÃ MV</strong></center>
-	<img  src="/src/main/webapp/images/cafe_manha.jpg">
+	<div>
+			<img  src="images/cafe_manha.jpg" width="200" height="200"/>	
+	</div>
 	
 	<input type="hidden" name="x" value="1">
 	
