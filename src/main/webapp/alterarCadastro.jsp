@@ -8,6 +8,7 @@
 </head>
 <body>
 <form name="frmAlterarCadastroUsuario" action="alterarUsuarioController" method="get">
+<a href="./login.jsp">deslogar</a><br/>
 	<h3> DADOS DO USUÁRIO</h3> <br/>
 	<input type="hidden" name="id" value="">
 	<table>

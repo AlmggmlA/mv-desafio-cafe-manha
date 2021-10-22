@@ -60,16 +60,10 @@ public class loginController extends HttpServlet {
 		
 		try {
 			if(rsUsuario_dao.next()) {
-				
-//				HttpSession session = request.getSession(true);
-//				session.putValue("usuario", cpf);
-				
-				//response.sendRedirect(request.getContextPath()+"/alterarUsuarioController");
-				response.sendRedirect("/src/main/webapp/telaUsuario.jsp");	
-				//response.sendRedirect("telaUsuario.jsp");				
+				response.sendRedirect("./telaUsuario.jsp");		
 			}
 			else {				
-				RequestDispatcher dispatcher = request.getRequestDispatcher("/src/main/webapp/login.jsp");
+				RequestDispatcher dispatcher = request.getRequestDispatcher("./login.jsp");
 				dispatcher.forward(request, response);
 				mensagem = "Informe um CPF e/ou Senha válido!";				
 			}
@@ -81,3 +75,11 @@ public class loginController extends HttpServlet {
 	}
 
 }
+
+
+//HttpSession session = request.getSession(true);
+//session.putValue("usuario", cpf);
+
+//response.sendRedirect(request.getContextPath()+"/alterarUsuarioController");
+	
+//response.sendRedirect("telaUsuario.jsp");		

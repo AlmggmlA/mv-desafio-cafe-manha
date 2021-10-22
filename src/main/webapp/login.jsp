@@ -7,7 +7,7 @@
 <title>Tela de Login</title>
 </head>
 <body>
-	Voltar para <a href="/src/main/webapp/index.html">HOME</a>
+	Voltar para <a href="./index.html">HOME</a>
 		
 	<form method="post" action="loginController"><br/>
 		<label>CPF:</label><br/>
@@ -17,7 +17,7 @@
 		
 		<input type="submit" value="Logar"/>
 	
-	Se não tem cadastro, então <a href="cadastroUsuario.jsp">CADASTRE-SE</a>
+	Se não tem cadastro, então <a href="./cadastroUsuario.jsp">CADASTRE-SE</a>
 	</form>
 	
 	<%

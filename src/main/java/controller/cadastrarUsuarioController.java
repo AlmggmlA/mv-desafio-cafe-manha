@@ -43,7 +43,7 @@ public class cadastrarUsuarioController extends jakarta.servlet.http.HttpServlet
 			Usuario usuario = new Usuario();
 			String mensagem;
 			
-			RequestDispatcher dispatcher = request.getRequestDispatcher("/src/main/webapp/cadastroUsuario.jsp");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("./cadastroUsuario.jsp");
 			
 			if(nome != null && !nome.isEmpty()){			
 				usuario.setNome(nome);

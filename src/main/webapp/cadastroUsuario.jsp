@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-Voltar para <a href="/src/main/webapp/index.html">HOME</a>
-
+Voltar para <a href="./index.html">HOME</a></br>
+<a href="./login.jsp">deslogar</a><br/>
 
 <form name="frmCadastroUsuario" action="cadastrarUsuarioController" method="get">
 	<h3> CADASTRO DE USUÁRIO</h3> <br/>
