@@ -6,7 +6,7 @@
 <body style="background-color:grey;">
 	<center><strong>CAFÉ DA MANHÃ MV</strong></center>
 	<div>
-			<img  src="images/cafe_manha.jpg" width="200" height="200"/>	
+			<img  src="images/cafe_manha.jpg" width="400" height="300"/>	
 	</div>
 	
 	<input type="hidden" name="x" value="1">
