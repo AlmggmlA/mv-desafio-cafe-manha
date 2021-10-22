@@ -3,7 +3,7 @@
 <meta charset="ISO-8859-1">
 <title>Home</title>
 </head>
-<body>
+<body style="background-color:grey;">
 	<center><strong>CAFÉ DA MANHÃ MV</strong></center>
 	<div>
 			<img  src="images/cafe_manha.jpg" width="200" height="200"/>	
