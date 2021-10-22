@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>Tela de Login</title>
 </head>
-<body>
+<body style="background-color:grey;">
 	Voltar para <a href="./index.html">HOME</a>
 		
 	<form method="post" action="loginController"><br/>
