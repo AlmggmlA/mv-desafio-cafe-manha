@@ -11,7 +11,7 @@ public class ItemDAO {
 	
 	public void cadastrarItem(Item_cafeManha item) {
 		
-		String sql = "INSERT INTO item VALUES (null,?,null)";
+		String sql = "INSERT INTO item VALUES (null,?)";
 		
 		PreparedStatement prepStat = null;
 		Connection conn = null;
