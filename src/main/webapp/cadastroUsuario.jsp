@@ -8,7 +8,7 @@
 </head>
 <body>
 Voltar para <a href="./index.html">HOME</a></br>
-<a href="./login.jsp">deslogar</a><br/>
+<a href="./deslogar.jsp">deslogar</a><br/>
 
 <form name="frmCadastroUsuario" action="cadastrarUsuarioController" method="get">
 	<h3> CADASTRO DE USUÁRIO</h3> <br/>

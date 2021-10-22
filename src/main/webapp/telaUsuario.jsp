@@ -10,8 +10,13 @@
 </head>
 <body>
 <form name="frmCadastroCafe" action="cadastrarItemController" method="get">
-		<h3> Bem-vindo(a)!</h3> 
-		<a href="./login.jsp">deslogar</a><br/>
+		
+		<%
+			String usuario = (String) session.getAttribute("usuario");
+			out.print("<h3> Bem-vindo, "+usuario+"</h3></br>");
+		%>
+		
+		<a href="./deslogar.jsp">deslogar</a><br/>
 		<a href="./alterarCadastro.jsp">alterar cadastro do usuário</a><br/>
 		<br/><br/>
 		

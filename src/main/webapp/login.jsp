@@ -32,6 +32,7 @@
 		
 		if(usuario!=null && senha!=null && !usuario.isEmpty() && !senha.isEmpty()){
 			session.setAttribute("usuario", usuario);
+			response.sendRedirect("./telaUsuario.jsp");
 		}
 	%>
 	
